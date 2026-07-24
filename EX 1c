@@ -1,0 +1,72 @@
+#INPUT
+
+
+print("==============================")
+print("MODULAR ARITHMETIC CALCULATOR")
+print("==============================")
+a = int(input("Enter the 1st Integer (a): "))
+b = int(input("Enter the 2nd Integer (b): "))
+m = int(input("Enter the Modulus (m): "))
+if m <= 0:
+    print("Modulus must be greater than 0.")
+else:
+    while True:
+        print("\n======MENU======")
+        print("1.modular addition")
+        print("2.modular subtraction")
+        print("3.modular multiplication")
+        print("4.modular exponentiation")
+        print("5.exit")
+        choice=int(input("enter your choice(1-5):"))
+        if choice==1:
+            result=(a+b)%m
+            print("\nModular Addition")
+            print(f"({a}+{b})mod{m}={result}")
+        elif choice==2:
+            result=(a-b)%m
+            print("\nModular Subtraction")
+            print(f"({a}-{b})mod{m}={result}")
+        elif choice==3:
+            result=(a*b)%m
+            print("\nModular Multiplication")
+            print(f"({a}*{b})mod{m}={result}")
+        elif choice==4:
+            result=pow(a,b,m)
+            print("\nModular Exponential")
+            print(f"({a}^{b})mod{m}={result}")
+        elif choice==5:
+            print("\n Exiting the program")
+            break
+        else:
+            print("\n invalid choice! please select between 1 and 5")
+
+
+#OUTPUT
+
+==============================
+MODULAR ARITHMETIC CALCULATOR
+==============================
+Enter the 1st Integer (a): 11
+Enter the 2nd Integer (b): 4
+Enter the Modulus (m): 2
+
+======MENU======
+1.modular addition
+2.modular subtraction
+3.modular multiplication
+4.modular exponentiation
+5.exit
+enter your choice(1-5):1
+
+Modular Addition
+(11+4)mod2=1
+
+======MENU======
+1.modular addition
+2.modular subtraction
+3.modular multiplication
+4.modular exponentiation
+5.exit
+enter your choice(1-5):5
+
+ Exiting the program
