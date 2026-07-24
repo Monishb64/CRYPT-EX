@@ -1,0 +1,41 @@
+#INPUT
+
+print("==============================================")
+print(" Military Secure Communication System")
+print("==============================================")
+parameter1 = int(input("Enter the 1st Communication Parameter:"))
+parameter2 = int(input("Enter the 2nd Communication Parameter:"))
+a=parameter1
+b=parameter2
+while b!=0:
+    remainder=a%b
+    print(f"{a}/{b} = Quotient {a//b}, Remainder {remainder}")
+    a=b
+    b=remainder
+gcd=a
+print("\nGreatest Common Divisor (GCD) =", gcd)
+if gcd==1:
+    print("\nthe communication parameters are COPRIME")
+    print("secure communication can be established")
+else:
+    print("\nthe communication parameters are NOT COPRIME")
+    print("communication setup rejected")
+    print("select different communication parameters")
+
+
+#OUTPUT
+
+==============================================
+ Military Secure Communication System
+==============================================
+Enter the 1st Communication Parameter:12
+Enter the 2nd Communication Parameter:23
+12/23 = Quotient 0, Remainder 12
+23/12 = Quotient 1, Remainder 11
+12/11 = Quotient 1, Remainder 1
+11/1 = Quotient 11, Remainder 0
+
+Greatest Common Divisor (GCD) = 1
+
+the communication parameters are COPRIME
+secure communication can be established
