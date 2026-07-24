@@ -1,0 +1,13 @@
+#INPUT
+
+import hashlib
+message=input("Enter Message: ")
+hash_value=hashlib.sha1(message.encode())
+print("SHA-1 Digest:",hash_value.hexdigest())
+
+
+
+#OUTPUT
+
+Enter Message: Cryptology
+SHA-1 Digest: ba7160026c971c61eca61f590d68b3de9fadc0f3
